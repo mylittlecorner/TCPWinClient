@@ -80,9 +80,12 @@ namespace Client
         {
             try
             {
-                _cli.Write(msgTextBox.Text);
-                _fm.WriteLine(msgTextBox.Text+" "+DateTime.Now);
-                responseTextLabel.Text = _cli.Read();
+               if (msgTextBox.Text.Length > 0)
+                {
+                    _cli.Write(msgTextBox.Text);
+                    _fm.WriteLine(msgTextBox.Text + " " + DateTime.Now);
+                    responseTextLabel.Text = _cli.Read();
+                }
             }
             catch
             {
