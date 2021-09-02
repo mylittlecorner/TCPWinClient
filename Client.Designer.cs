@@ -170,6 +170,9 @@ namespace Client
             this.Controls.Add(this.portLabel);
             this.Controls.Add(this.hostLabel);
             this.Controls.Add(this.hostTextBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Client";
             this.Text = "Client";
             this.Load += new System.EventHandler(this.Client_Load);
