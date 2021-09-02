@@ -117,6 +117,7 @@ namespace Client
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             base.OnFormClosing(e);
+            if(_cli!=null)
             CloseConn();
         }
     }
