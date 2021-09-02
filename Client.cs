@@ -50,6 +50,8 @@ namespace Client
 
         private void connectButton_Click(object sender, EventArgs e)
         {
+            requestButton.Enabled = false;
+            disconnectButton.Enabled = false;
             if(_cli!=null)
             _cli.Close();
             try
