@@ -52,6 +52,7 @@ namespace Client
         {
             requestButton.Enabled = false;
             disconnectButton.Enabled = false;
+            responseTextLabel.Text = "-";
             if(_cli!=null)
             _cli.Close();
             try
