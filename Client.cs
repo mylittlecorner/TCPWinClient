@@ -113,5 +113,11 @@ namespace Client
             disconnectButton.Enabled = false;
             responseTextLabel.Text = "-";
         }
+        
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            CloseConn();
+        }
     }
 }
